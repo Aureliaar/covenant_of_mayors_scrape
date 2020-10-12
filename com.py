@@ -2,9 +2,12 @@ import requests
 import time
 import json
 import pickledb
+from bs4 import BeautifulSoup
+ 
+ 
+ 
  
 db = pickledb.load('data.db', False)
-from bs4 import BeautifulSoup
 
 
 to_strip = ["<td>", "</td>", "<h3>", "</h3>"]
